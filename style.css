@@ -1019,34 +1019,53 @@ transform:translateY(-3px);
 }
 
 
+
 /* VIDEO SECTION */
 .video-section {
     text-align: center;
-    padding: 50px 20px;
+    padding: 80px 20px;
+    background: #f9f9f9;
 }
 
+.video-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* VIDEO CONTAINER */
 .video-box {
+    margin-top: 60px;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    align-items: center;
 }
 
-.video-box iframe {
+/* VIDEO STYLE */
+.video-box video {
     width: 100%;
-    max-width: 700px;
-    height: 400px;
+    max-width: 750px;
+    height: auto;
     border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+/* HOVER EFFECT (desktop only feel) */
+.video-box video:hover {
+    transform: scale(1.02);
 }
 
 /* MOBILE */
 @media(max-width:768px){
-    .video-box iframe {
-        height: 250px;
+    .video-section h2 {
+        font-size: 24px;
+    }
+
+    .video-box video {
+        max-width: 100%;
+        border-radius: 10px;
     }
 }
-
-
-
 
 
 
